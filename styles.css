@@ -1,0 +1,51 @@
+/* Сброс базовых отступов для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-header {
+    background-color:blue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-header__title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }  
+  .main-nav_list {
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;   
+  }
+ 
+
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #222;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
