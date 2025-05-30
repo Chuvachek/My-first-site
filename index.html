@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Автосалон "АвтоМир"</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автосалон "АвтоМир"</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать в "АвтоМир"</h1>
-        <nav>
-            <ul>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="about.html">О нас</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="reviews.html">Отзывы клиентов</a></li>
-                <li><a href="vacancies.html">Наши вакансии</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="main-header">
+    <h1 class="main-header__title">Добро пожаловать в "АвтоМир"</h1>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог</a></li>
+        <li class="main-nav__item"><a href="about.html" class="main-nav__link">О нас</a></li>
+        <li class="main-nav__item"><a href="contacts.html" class="main-nav__link">Контакты</a></li>
+        <li class="main-nav__item"><a href="reviews.html" class="main-nav__link">Отзывы клиентов</a></li>
+        <li class="main-nav__item"><a href="vacancies.html" class="main-nav__link">Наши вакансии</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="homepage-content">
+    <section class="homepage-feature">
+      <h2 class="homepage-feature__title">Лучшие автомобили по выгодным ценам</h2>
+      <p class="homepage-feature__text">Выберите свою идеальную машину уже сегодня!</p>
+      <a href="catalog.html" class="homepage-button">Перейти в каталог</a>
+    </section>
     
-    <main>
-        <section>
-            <h2>Лучшие автомобили по выгодным ценам</h2>
-            <p>Выберите свою идеальную машину уже сегодня!</p>
-            <a href="catalog.html" class="btn">Перейти в каталог</a>
-        </section>
-        
-        <section>
-            <h2>Почему выбирают нас?</h2>
-            <ul>
-                <li>Большой выбор новых и б/у автомобилей</li>
-                <li>Гибкие условия оплаты и кредита</li>
-                <li>Гарантия качества и техническая поддержка</li>
-            </ul>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 АвтоМир. Все права защищены.</p>
-    </footer>
+    <section class="homepage-benefits">
+      <h2 class="homepage-benefits__title">Почему выбирают нас?</h2>
+      <ul class="homepage-benefits__list">
+        <li class="homepage-benefits__item">Большой выбор новых и б/у автомобилей</li>
+        <li class="homepage-benefits__item">Гибкие условия оплаты и кредита</li>
+        <li class="homepage-benefits__item">Гарантия качества и техническая поддержка</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="main-footer">
+    <p class="main-footer__text">&copy; 2025 АвтоМир. Все права защищены.</p>
+  </footer>
 </body>
 </html>
