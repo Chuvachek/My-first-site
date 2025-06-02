@@ -1,53 +1,56 @@
+Заканчивается свободное место. … Если у вас закончится свободное место, вы не сможете сохранять файлы на Диске, загружать снимки в Google Фото и использовать Gmail.
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Каталог автомобилей | Магазин</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог автомобилей | Магазин</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Каталог автомобилей</h1>
-        <p><a href="index.html">Вернуться на главную страницу</a></p>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Кроссоверы BMW</h2>
-            
-            <article>
-                <h3>BMW X2</h3>
-                <img src="bmw x2.png">
-                <p>
-                    Абсолютно уникальный. Экстремально необычный автомобиль. Новый BMW X2 с первого взгляда показывает свою спортивную сущность.<br>
-                    Мощный и атлетичный, он предлагает динамику и манёвренность, которые в этом классе автомобилей не имеют себе равных.
-                </p>
-                <button>Купить сейчас</button>
-            </article>
-            
-            <article>
-                <h3>BMW X5</h3>
-                <img src="bmw x5.png">
-                <p>
-                    Оснащенный новыми технологиями, обеспечивающими больше безопасности и максимум динамики на любых покрытиях, BMW X5 является безусловным лидером.
-                </p>
-                <button>Купить сейчас</button>
-            </article>
-            
-            <article>
-                <h3>BMW X4</h3>
-                <img src="bmw x4.png">
-                <p>
-                    Новый BMW X4 — это настоящий покоритель дорог. Это Sports Activity Coupe (SAC), оснащенный двигателями BMW TwinPower Turbo и имеющий более<br>
-                    широкую колесную базу для превосходной управляемости, а также множество усовершенствованных элементов дизайна экстерьера и интерьера.
-                </p>
-                <button>Купить сейчас</button>
-            </article>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 АвтоМир. Все права защищены.</p>
-    </footer>
+  <header class="catalog-header">
+    <h1 class="catalog-header__title">Каталог автомобилей</h1>
+    <p><a href="index.html">Вернуться на главную страницу</a></p>
+  </header>
+  
+  <main class="catalog-content">
+    <section class="catalog-section">
+      <h2>Кроссоверы BMW</h2>
+      <div class="catalog-cards">
+        <article class="catalog-card">
+          <h3>BMW X2</h3>
+          <img src="bmw x2.png" alt="BMW X2">
+          <p>
+            Абсолютно уникальный. Экстремально необычный автомобиль. Новый BMW X2 с первого взгляда показывает свою спортивную сущность.<br>
+            Мощный и атлетичный, он предлагает динамику и манёвренность, которые в этом классе автомобилей не имеют себе равных.
+          </p>
+          <button>Купить сейчас</button>
+        </article>
+        
+        <article class="catalog-card">
+          <h3>BMW X5</h3>
+          <img src="bmw x5.png" alt="BMW X5">
+          <p>
+            Оснащенный новыми технологиями, обеспечивающими больше безопасности и максимум динамики на любых покрытиях, BMW X5 является безусловным лидером.
+          </p>
+          <button>Купить сейчас</button>
+        </article>
+        
+        <article class="catalog-card">
+          <h3>BMW X4</h3>
+          <img src="bmw x4.png" alt="BMW X4">
+          <p>
+            Новый BMW X4 — это настоящий покоритель дорог. Это Sports Activity Coupe (SAC), оснащенный двигателями BMW TwinPower Turbo и имеющий более<br>
+            широкую колесную базу для превосходной управляемости, а также множество усовершенствованных элементов дизайна экстерьера и интерьера.
+          </p>
+          <button>Купить сейчас</button>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="catalog-footer">
+    <p>&copy; 2025 АвтоМир. Все права защищены.</p>
+  </footer>
 </body>
 </html>

@@ -16,62 +16,13 @@
     font-size: 2.5em;
     margin-bottom: 10px;
   }  
-  .main-nav__list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-  }  
-  .main-nav__link {
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-    .main-nav__link:hover {
-    background-color: #0066cc;
-  } 
-  .homepage-feature {
-    background: url('header-bg.jpg') no-repeat center/cover; 
-    color: #1310da;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .homepage-feature__title {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .homepage-button {
-  display: inline-block;
-  background-color: #ff6600;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-top: 15px;
-  transition: background-color 0.3s, transform 0.2s ease;
-  text-decoration: none; /* убирает подчёркивание у ссылки */
+
+ 0px;
 }
 
-/* ЭФФЕКТ ПРИ НАВЕДЕНИИ */
-.homepage-button:hover {
-  background-color: #cc5200; /* более тёмный оранжевый */
-  transform: scale(1.05);    /* немного увеличивает кнопку */
-}
-.homepage-benefits {
-    background-color: #e0f7fa; 
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    margin: 30px auto;
-    max-width: 500px;
-}
 .homepage-benefits__title {
-    font-size: 30px;
-    color: #1a3dec;
+    font-size: 24px;
+    color: #004080;
     margin-bottom: 20px;
 }
 
@@ -80,18 +31,17 @@
     padding: 0;
 }
 
-
 .homepage-benefits__item {
     font-size: 18px;
     margin: 10px 0;
-    padding: 20px;
+    padding: 10px;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(235, 42, 39, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-footer {
-    background-color: #0580fa; 
+    background-color: #004080; 
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -101,11 +51,35 @@
 .main-footer__text {
     font-size: 14px;
 }
+.catalog-header {
+  text-align: center;
+  background-color: #004080; /* Синий фон */
+  color: #fff;             /* Белый текст */
+  padding: 20px;
+}
+
+.catalog-header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+.catalog-header p {
+  margin: 0;
   
+}
 
+.catalog-header a {
+  color:#fff;
+  font-weight: bold;
+}
+/* Стилизация секции с заголовком "Кроссоверы BMW" */
+.catalog-section h2 {
+  text-align: right;
+  color: #004080; /* Синий цвет */
+  font-size: 2em;
+  margin-bottom: 20px;
+}
 
   
-
   body {
     font-family: Arial, sans-serif;
     font-size: 16px;
