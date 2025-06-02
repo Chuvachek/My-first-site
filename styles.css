@@ -14,7 +14,7 @@
   
   .main-header__title {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }  
 
  0px;
@@ -68,16 +68,60 @@
 }
 
 .catalog-header a {
-  color:#fff;
+  color:#dbdbf6;
   font-weight: bold;
 }
 /* Стилизация секции с заголовком "Кроссоверы BMW" */
 .catalog-section h2 {
-  text-align: right;
+  text-align: center;
   color: #004080; /* Синий цвет */
   font-size: 2em;
   margin-bottom: 20px;
 }
+/* Стилизация карточек каталога */
+.catalog-cards {
+  background-color: #241178;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.catalog-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  transition: transform 0.3s;
+  text-align: center; /* Центрирование содержимого карточки */
+}
+
+.catalog-card:hover {
+  transform: scale(1.02);
+}
+
+.catalog-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 10px;
+}
+.catalog-card button {
+  background-color: #ff6600;
+  color: #070404;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;   /* Центрирование кнопки */
+  display: block;   /* Обеспечивает действие margin auto */
+}
+.catalog-card button:hover {
+  background-color: #0939ca;
+}
+
 
   
   body {
