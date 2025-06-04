@@ -1,55 +1,200 @@
 /* Сброс базовых отступов для всех элементов */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .main-header {
-    background-color: #004080;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .main-header__title {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }  
+.main-header {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
+.main-header__title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}  
 
+.main-nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}  
+
+.main-nav__link {
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.main-nav__link:hover {
+  background-color: #0066cc;
+}
+
+.homepage-feature {
+  background: url('header-bg.jpg') no-repeat center/cover; 
+  color: #1310da;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.homepage-feature__title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.homepage-button {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.homepage-button:hover {
+  background-color: #e65c00;
+}
+
+.homepage-benefits {
+  background-color: #e0f7fa; 
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 40px auto;
+  max-width: 800px;
+}
 
 .homepage-benefits__title {
-    font-size: 24px;
-    color: #004080;
-    margin-bottom: 20px;
+  font-size: 24px;
+  color: #004080;
+  margin-bottom: 20px;
 }
 
 .homepage-benefits__list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .homepage-benefits__item {
-    font-size: 18px;
-    margin: 10px 0;
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-footer {
-    background-color: #004080; 
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+  background-color: #004080; 
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
 
 .main-footer__text {
-    font-size: 14px;
+  font-size: 14px;
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Секция "О компании" */
+.about-section {
+max-width: 900px;
+margin: 40px auto;
+padding: 40px;
+background-color: #e0f7fa; 
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+/* Заголовок и ссылка */
+.about-header h1 {
+font-size: 2.2em;
+color: #004080; 
+margin-bottom: 15px;
+}
+
+.about-header a {
+color: #ff6600; 
+font-weight: bold;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.about-header a:hover {
+color: #e65c00; 
+}
+
+/* Контент */
+.about-content {
+text-align: left;
+font-size: 18px;
+color: #333;
+line-height: 1.6;
+}
+
+/* Заголовки внутри контента */
+.about-content h2 {
+font-size: 1.8em;
+color: #004080;
+margin-top: 25px;
+}
+
+/* Списки */
+.about-content ul {
+list-style: none;
+padding: 0;
+}
+
+.about-content li {
+background: #fff;
+padding: 12px;
+margin: 8px 0;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+font-size: 17px;
+}
+
+/* Футер */
+.about-footer {
+margin-top: 30px;
+font-size: 18px;
+color: #004080;
+font-weight: bold;
+}
+
+
+/* Стили для заголовка страницы каталога */
 .catalog-header {
   text-align: center;
   background-color: #004080; /* Синий фон */
@@ -61,15 +206,16 @@
   margin-bottom: 10px;
   font-size: 2.5em;
 }
+
 .catalog-header p {
   margin: 0;
-  
 }
 
 .catalog-header a {
-  color:#dbdbf6;
+  color: #fff;
   font-weight: bold;
 }
+
 /* Стилизация секции с заголовком "Кроссоверы BMW" */
 .catalog-section h2 {
   text-align: center;
@@ -77,20 +223,21 @@
   font-size: 2em;
   margin-bottom: 20px;
 }
+
 /* Стилизация карточек каталога */
 .catalog-cards {
-  background-color: #241178;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   padding: 20px;
 }
+
 .catalog-card {
   background-color: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 300px;
   transition: transform 0.3s;
   text-align: center; /* Центрирование содержимого карточки */
@@ -106,9 +253,10 @@
   display: block;
   margin: 0 auto 10px;
 }
+
 .catalog-card button {
   background-color: #ff6600;
-  color: #070404;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -117,119 +265,124 @@
   margin: 0 auto;   /* Центрирование кнопки */
   display: block;   /* Обеспечивает действие margin auto */
 }
+
 .catalog-card button:hover {
-  background-color: #0939ca;
+  background-color: #e65c00;
 }
-/*Футер страницы каталога */
+
+/* Футер страницы каталога */
 .catalog-footer {
-  background-color:#004080; /*синий фон*/
-  color:#ffffff; /*белый текст*/
+  background-color: #004080; /* Синий фон */
+  color: #fff;              /* Белый текст */
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   font-size: 18px;
-  font-weight:bolder ;
+  font-weight: bold;
   margin-top: 30px;
 }
-/* стили для страницы "Контакты" */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6fa;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-/* Центрирование секции */
-section {
-  max-width: 1000px;
+
+
+/* --- Стили для страницы "Контакты" --- */
+
+/* Основной контейнер страницы контактов */
+.contacts-section {
+  max-width: 800px;
   margin: 20px auto;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 90px;
-  box-shadow: 0 8px 200px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
+/* Шапка страницы контактов */
+.contacts-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004080;  /* Синий фон */
+  color: #fff;                /* Белый текст */
+  padding: 20px;
+}
 
-/* Заголовок страницы */
-header h1 {
-  font-size: 36px;
-  color: #2c3e50;
+.contacts-header__title {
+  font-size: 2.5em;
   margin-bottom: 10px;
-  text-align: center;
 }
 
-/* Ссылка "назад на главную" */
-header p a {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 16px;
-  color: #3498db;
+.contacts-header__link a {
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
 }
 
-header p a:hover {
+.contacts-header__link a:hover {
   text-decoration: underline;
 }
 
-/* Заголовки блоков */
-article h2,
-article h3 {
-  color: #1a237e;
-  margin-top: 25px;
+/* Основной блок с контактной информацией */
+.contacts-info {
+  padding: 20px;
 }
 
-/* Ссылки (телефон, email) */
-a[href^="tel:"],
-a[href^="mailto:"] {
-  color: #e67e22;
+.contacts-info__title {
+  text-align: center;
+  font-size: 2em;
+  color: #004080;  /* Синий цвет */
+  margin-bottom: 20px;
+}
+
+.contacts-info__text {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contacts-info__subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  color: #211de9;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contacts-info__subtitles {
+    text-align: center;
+  font-size: 1.2em;
+  color: #62e416;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+.contacts-info__details {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.contacts-info__link {
+  color: #004080;
+  font-weight: bold;
   text-decoration: none;
+}
+
+.contacts-info__link:hover {
+  text-decoration: underline;
+}
+
+/* Футер страницы контактов */
+.contacts-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #004080;  /* Синий фон */
+  color: #fff;                /* Белый текст */
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contacts-footer__text {
+  font-size: 18px;
   font-weight: bold;
 }
-
-a[href^="tel:"]:hover,
-a[href^="mailto:"]:hover {
-  text-decoration: underline;
-}
-
-/* Абзацы с контактами */
-article p {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-/* Подвал */
-footer {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #ccc;
-  text-align: center;
-  font-style: italic;
-  color: #555;
-}
-
-  
-
-  
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-
-
-  
-  h1, h2, h3 {
-    color: #222;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #0077cc;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  
