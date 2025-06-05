@@ -286,11 +286,11 @@ font-weight: bold;
 
 /* Основной контейнер страницы контактов */
 .contacts-section {
-  width: 70%;
-  margin: 50px auto;
+  max-width: 800px;
+  margin: 20px auto;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   overflow: hidden;
 }
 
@@ -298,9 +298,8 @@ font-weight: bold;
 .contacts-header {
   display: flex;
   flex-direction: column;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   align-items: center;
-  background-color: #022c56;  /* Синий фон */
+  background-color: #004080;  /* Синий фон */
   color: #fff;                /* Белый текст */
   padding: 20px;
 }
@@ -341,18 +340,9 @@ font-weight: bold;
 .contacts-info__subtitle {
   text-align: center;
   font-size: 1.2em;
-  color: #211de9;
+  color: #004080;
   margin-top: 20px;
   margin-bottom: 10px;
-}
-
-.contacts-info__subtitles {
-    text-align: center;
-  font-size: 1.2em;
-  color: #62e416;
-  margin-top: 30px;
-  margin-bottom: 20px;
-
 }
 
 .contacts-info__details {
@@ -386,4 +376,244 @@ font-weight: bold;
 .contacts-footer__text {
   font-size: 18px;
   font-weight: bold;
+}
+
+
+
+
+
+/* --- Основные стили страницы "Вакансии" --- */
+
+/* Контейнер для шапки */
+.vacancies-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004080; /* Синий фон */
+  color: #fff; /* Белый текст */
+  padding: 20px;
+}
+
+.vacancies-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.vacancies-header p a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.vacancies-header p a:hover {
+  text-decoration: underline;
+}
+
+/* Основной контент */
+.vacancies-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Заголовок раздела */
+.vacancies-section h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+/* Карточка вакансии */
+.vacancy {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.vacancy h3 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.vacancy p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Разделители между вакансиями */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+
+
+
+/* --- Основные стили страницы "Отзывы клиентов" --- */
+
+/* Шапка */
+.reviews-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004080; /* Синий фон */
+  color: #fff; /* Белый текст */
+  padding: 20px;
+}
+
+.reviews-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.reviews-header p a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.reviews-header p a:hover {
+  text-decoration: underline;
+}
+
+/* Основной контент */
+.reviews-content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Раздел с отзывами */
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Карточка отзыва */
+.review {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Разделители между отзывами */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+  margin: 20px 0;
+}
+
+/* Футер */
+.reviews-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #004080;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-nav__list {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .main-nav__item {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  main section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  article {
+    width: 90%; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; 
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .homepage-feature {
+    padding: 40px 10px;
+  }
+}
+
+:root {
+  --primary-color: #004080;
+  --accent-color: #ff6600;
+  --text-color: #333;
+  --background-color: #f5f5f5;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.main-header {
+  background-color: var(--primary-color);
+}
+
+.homepage-button, button {
+  background-color: var(--accent-color);
+}
+
+article {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
