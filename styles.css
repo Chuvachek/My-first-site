@@ -415,7 +415,7 @@ font-weight: bold;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 50px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -432,7 +432,7 @@ font-weight: bold;
   background-color: #f9f9f9;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2p  x 5px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }
 
@@ -607,7 +607,7 @@ body {
 
 article {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(200px);
   animation: fadeInUp 0.5s forwards;
 }
 
